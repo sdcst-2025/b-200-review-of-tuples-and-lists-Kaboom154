@@ -2,9 +2,10 @@
 
 
 def getIntegers(myList):
-    # myList : expected list or tuple
-    # iterate through myList and add all the integers to the new list
     integers = []
+
+    x= [i for i in myList if type(i)==int]
+    integers.extend(x)
 
     return integers
 
