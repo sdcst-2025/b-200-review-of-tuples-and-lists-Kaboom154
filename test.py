@@ -1,18 +1,23 @@
 
-def getFactor(myList,number):
-    # myList : expected list or tuple
-    # number : integer
-    # iterate through the list and add the number to the list if
-    # it is a factor of the number
-    factors = []
+def getIntersection(list1,list2):
+    # list 1: expected list or tuple
+    # list 2: expected list or tuple
+    # return a sorted list of numbers that is in both lists
+    # the intersection of the 2 number sets
+    common = []
 
-    x= [i for i in myList if number % i == 0] #make i not use 0
-    factors.extend(x)
 
-    print(factors)
-    return factors
 
-if getFactor(range(10),12) == [1,2,3,4,6]:
+
+
+    print(common)
+    return common
+
+
+easy1 = [5,10,15,2,4,6,8]
+easy2 = [-2,-4,-6,2,4,6,0.1]
+if getIntersection(easy1,easy2) == [2,4,6]:
     print("yay")
 else:
     print("nay")
+

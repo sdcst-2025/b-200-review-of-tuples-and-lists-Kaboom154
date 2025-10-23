@@ -10,18 +10,14 @@ def getIntegers(myList):
     return integers
 
 def getFactor(myList,number):
-    # myList : expected list or tuple
-    # number : integer
-    # iterate through the list and add the number to the list if
-    # it is a factor of the number
-    factors = []
-
+    abc = list(myList)
+    abc.pop(abc.index(0))
+    factors = [i for i in abc if number % i == 0]
+    
     return factors
 
 def getNegatives(myList):
-    # myList : expected list or tuple
-    # iterate through myList and add all the negative numbers to the new list
-    negatives = []
+    negatives = [i for i in myList if i < 0]
 
     return negatives
 
